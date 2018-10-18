@@ -1,5 +1,5 @@
 
-
+//Medical Service Finder
 
 
 import java.awt.FlowLayout;
@@ -50,20 +50,11 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 
-//import EconomicOnlineShopping.EcoShopGuide;
-//import EconomicOnlineShopping.EconomicShoppingGuide;
-
 import com.google.gson.Gson;
 
 
-/**
- * EconoShoppingGuideHome creates the GUI interface for taking user inputs on
- * user priority constraints, websites priority, user query, selection of Google API
- * or Web Crawler, start searching and outputs the searching results, after applying 
- * vector space model and after applying personalozed ranking algorithm. User can also
- * choose the url to go to that webpage.
- *
- * 
+/*
+ Medical Service Finder creates the GUI interface for taking user inputs 
  */
 
 public class Medical_Service_Finder extends javax.swing.JFrame implements Runnable {
