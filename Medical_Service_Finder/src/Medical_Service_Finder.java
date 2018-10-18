@@ -110,17 +110,7 @@ public class Medical_Service_Finder extends javax.swing.JFrame implements Runnab
 	  JButton select_button;	  
 	  JButton personalized_button;
 	  
-	/* track the user input on priority lists into the following variables*/
-	  public JTextField shipping;
-	  public JTextField cost_product;
-	  public JTextField portal;
-	  public JTextField state_product;
-	  
-	  public JTextField user_city;
-	  public JTextField user_state;
-	  public JTextField user_zip_code;
-	  
-	  
+	/* medical information*/
 	  public JTextField doctor_info;
 	  public JTextField healthcare_info;
 	  public JTextField emergency_info;
@@ -150,25 +140,6 @@ public class Medical_Service_Finder extends javax.swing.JFrame implements Runnab
 	  public double emergency_value_percentage;
 	  public double medication_store_percentage;
 	 
-	  
-	// /* track the user input on websites trustworthiness list into the following variables*/
-	  public JTextField amazon;
-	  public JTextField ebay;
-	  public JTextField groupon;
-	  public JTextField buy;
-	 
-	  /* convert the user input on websites trustworthiness list into the int variables*/
-	  public int amazon_value;
-	  public int ebay_value;
-	  public int groupon_value;
-	  public int buy_value;
-	 
-	  /* calculate the percentage of websites trustworthiness priority from the user inputs and save them for later user
-	  //in personalized ranking algorithm*/
-	  public double amazon_percentage;
-	  public double ebay_percentage;
-	  public double groupon_percentage;
-	  public double buy_percentage;
 	  
 	  // for selection of Crawling or API
 	  public JTextField crawling_api;	
@@ -551,33 +522,9 @@ public class Medical_Service_Finder extends javax.swing.JFrame implements Runnab
 	          emergency_value_percentage=0.2;
 	          medication_store_percentage=0.1;
 	          
-	          shipping_percentage=0.5; 
-	          product_cost_percentage =0.5;
-	          portal_percentage =0.5;
-	          product_state_percentage =0.5;
-	          
-             // System.out.printf("%d",shipping_value);
+	         
               System.out.println();
-  	        //  System.out.printf("Shipping: %.3f Product-Cost:%.3f Portal:%.3f Product-State:%.3f",shipping_percentage,product_cost_percentage,portal_percentage,product_state_percentage);
-              
-  	        /* Convert the user input to string*/
-	        /*  amazon_value= Integer.parseInt(amazon.getText().toString());
-	          ebay_value= Integer.parseInt(ebay.getText().toString());
-	          groupon_value= Integer.parseInt(groupon.getText().toString());
-	          buy_value= Integer.parseInt(buy.getText().toString());*/
-	          
-	          /* Calculate percentage for each priority option*/
-	        /*  amazon_percentage= (double)(amazon_value)/(double)(amazon_value+ebay_value+groupon_value+buy_value);
-	          ebay_percentage= (double)(ebay_value)/(double)(amazon_value+ebay_value+groupon_value+buy_value);
-	          groupon_percentage= (double)(groupon_value)/(double)(amazon_value+ebay_value+groupon_value+buy_value);
-	          buy_percentage= (double)(buy_value)/(double)(amazon_value+ebay_value+groupon_value+buy_value);
-	          */
-  	        amazon_percentage=0.5;
-  	        ebay_percentage= 0.5;
-  	        groupon_percentage= 0.5;
-  	        buy_percentage=0.5;
-  	          
-	        
+  	
 	          
 	          /*Directory to write the webpages and use those pages for inverted index preparation*/
 	          //String dirName = "C:\\java_workspace\\Medical_Service_Finder\\corpus\\";
